@@ -1,0 +1,19 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-deploy
+  template:
+    metadata:
+      labels:
+        app: my-deploy
+    spec:
+      containers:
+        - name: myapp
+          image: nginx
+
