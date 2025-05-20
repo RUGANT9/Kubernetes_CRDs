@@ -1,0 +1,7 @@
+apiVersion: mycompany.com/v1
+kind: Website
+metadata:
+  name: my-first-site
+spec:
+  domain: myapp.com
+  image: nginx:latest
